@@ -1,2 +1,2 @@
 # AudioDecoder
-decode picturefor audio file with glide
+decode picture from audio file with glide
