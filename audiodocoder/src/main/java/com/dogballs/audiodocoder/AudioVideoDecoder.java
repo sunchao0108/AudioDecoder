@@ -189,7 +189,7 @@ public class AudioVideoDecoder<T> implements ResourceDecoder<T, Bitmap> {
             }
             final byte[] embeddedPicture = mediaMetadataRetriever.getEmbeddedPicture();
             if (embeddedPicture!=null){
-                byteBufferBitmapDecoder.decode(ByteBuffer.wrap(embeddedPicture), outWidth, outHeight, options);
+               return byteBufferBitmapDecoder.decode(ByteBuffer.wrap(embeddedPicture), outWidth, outHeight, options);
             }
         } catch (RuntimeException e) {
             // MediaMetadataRetriever APIs throw generic runtime exceptions when given invalid data.
